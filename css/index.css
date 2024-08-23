@@ -1,0 +1,56 @@
+header {
+    background-color: #a38239;
+    padding: 10px;
+    text-align: center;
+}
+
+#searchInput, #searchButton, #breedsButton {
+    margin: 5px;
+    padding: 5px;
+}
+
+#searchInput {
+    width: 200px;
+}
+
+#searchButton {
+    background-color: #78d1c2;
+    border: none;
+    cursor: pointer;
+}
+
+#searchButton:hover {
+    background-color: rgb(42, 108, 151);
+}
+
+main {
+    padding: 10px;
+}
+
+#filters {
+    margin-bottom: 20px;
+}
+
+#catList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.cat-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.cat-item img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 375px) {
+    #searchInput {
+        max-width: 100%;
+    }
+}
